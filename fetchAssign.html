@@ -59,6 +59,7 @@
             let result = await fetchUserData();
             console.log(result);
             let tbody = document.getElementById("tableBody")
+            tbody.innerHTML = ""
             result.forEach((i, a, c) => {
                 console.log(i);
                 let row = document.createElement("tr")
